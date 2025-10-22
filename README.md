@@ -1,4 +1,5 @@
-# nekoliteJS 🐱✨
+# nekoliteJS
+![nekoliteJS](assets/Hitam dan Putih Modern Y2k Streetwear Tipografi Logo_20251022_144228_0000.png)
 
 **The minimalist Node.js server framework**  
 *Express who? Presenting nekoliteJS, the lightweight, kawaii server you've always wanted!* 🗿
