@@ -1,23 +1,23 @@
-## NEKOLITE.JS 🗿😂😄
+## NEKOLITE
 
 ---
 
 ![nekoliteJS](./assets/mascot.png)
 
-**The minimalist Node.js server framework**  
-*Express who? Presenting nekoliteJS, the lightweight, kawaii server you've always wanted!* 🗿
+**server ringan dan simpel**  
+*entahlah gw gabut jir*
 
 ---
 
-## Why nekoliteJS?
+## KENAPA NEKOLITE?
 
-- Minimalis & cepat  
-- Super ringan, bahkan kucing mu bisa jalankan server ini 🐾  
-- Middleware friendly  
-- JSON & static file support  
-- **No fluff, just code**  
+- jelek dan aneh
+- Super ringan, bahkan bisa dijalankan oleh kalkulator
+- syntax-nya mirip express 
+- bisa bikin kenyang ( kalau makan soto ) 
+- **project gabut anjir 😭**  
 
-> "Express killer, now your server will be more light and fast."  
+> "Fun Fact: gak juga bingung gw ngapain buat kek beginian wkwkwk."  
 
 ---
 
@@ -25,16 +25,22 @@
 
 ---
 
-## Installation
+## INSTALASI
 
 ```bash
-npm install nekolitejs
+npm install https://github.com/ransomefold/nekoliteJS
 ```
 ---
 
-## Usage Example
+## CARA PENGGUNAAN
 
 ```javascript
 import Nekolite from "nekolite";
 const app = Nekolite();
+
+app.get("/", (req, res) => {
+    res.send("hallo palkon!!")
+});
+
+app.listen(8080, () => console.log("server berhasil dijalankan"));
 ```
