@@ -2,7 +2,7 @@
 
 ---
 
-![nekoliteJS](https://i.postimg.cc/Rhp01zdt/Untitled178-20251022145931.png)
+![nekoliteJS](./assets/mascot.png)
 
 **The minimalist Node.js server framework**  
 *Express who? Presenting nekoliteJS, the lightweight, kawaii server you've always wanted!* 🗿
@@ -21,9 +21,8 @@
 
 ---
 
-**ini bukan forkingan express ya anjir**
-
 ![banner](./assets/banner.jpeg)
+
 ---
 
 ## Installation
@@ -33,7 +32,7 @@ npm install nekolitejs
 ```
 ---
 
-## Usage example
+## Usage Example
 
 ```javascript
 import Nekolite from "nekolite";
