@@ -2,26 +2,26 @@
 
 ---
 
-![nekoliteJS](./assets/mascot.png)
+![nekoliteJS](./assets/maskot.jpg)
 
-**server ringan dan simpel**  
-*entahlah gw gabut jir*
-
----
-
-## KENAPA NEKOLITE?
-
-- jelek dan aneh
-- Super ringan, bahkan bisa dijalankan oleh kalkulator
-- syntax-nya mirip express 
-- bisa bikin kenyang ( kalau makan soto ) 
-- **project gabut anjir 😭**  
-
-> "Fun Fact: gak juga bingung gw ngapain buat kek beginian wkwkwk."  
+**BUKANKAH INI MY?**  
+*CHISA WANGI WANGI, HMMMPS AHHHHH*
 
 ---
 
-![banner](./assets/banner.jpeg)
+## KENAPA CHISA?
+
+- cantik dan cool 😎 
+- bini gw 😎
+- karna dia jepang 🇯🇵😎
+- my istri
+- **KARBIT MINGGIR SANA**  
+
+> "BUKANKAH INI MY KISAH? YA EMANG 😎."  
+
+---
+
+![banner](./assets/banner.jpg)
 
 ---
 
