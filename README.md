@@ -2,8 +2,6 @@
 
 **GAMBAR HANYA PEMANIS, AH**
 
----
-
 ![nekoliteJS](./assets/maskot.jpg)
 
 **BUKANKAH INI MY?**  
