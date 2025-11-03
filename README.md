@@ -1,4 +1,4 @@
-## NEKOLITE
+## CHISA
 
 **GAMBAR HANYA PEMANIS, AH**
 
@@ -30,15 +30,15 @@
 ## INSTALASI
 
 ```bash
-npm install https://github.com/ransomefold/nekoliteJS
+npm install https://github.com/ransomefold/chisa
 ```
 ---
 
 ## CARA PENGGUNAAN
 
 ```javascript
-import Nekolite from "nekolite";
-const app = Nekolite();
+import Chisa from "chisa";
+const app = Chisa();
 
 app.get("/", (req, res) => {
     res.send("hallo palkon!!")

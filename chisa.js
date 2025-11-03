@@ -8,7 +8,7 @@
 // const http = require("http");
 import http from "http";
 
-class NekoliteServer {
+class ChisaServer {
     constructor() {
         this.routes = {};
         this.middlewares = [];
@@ -109,6 +109,6 @@ class NekoliteServer {
     }
 }
 
-export default function Nekolite() {
-    return new NekoliteServer();
+export default function Chisa() {
+    return new ChisaServer();
 }
