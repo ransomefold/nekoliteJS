@@ -18,7 +18,7 @@ class ChisaServer {
     }
 
     use(middleware) {
-    	if (!typeof middleware === "function") return;
+    	if (!typeof middleware === "function") { return };
         this.middlewares.push(middleware);
     }
 
