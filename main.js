@@ -28,6 +28,64 @@ class ChisaServer {
             cors: options.cors || false
         };
     }
+    
+    useStatic(mountPath, folderPath) {
+    // If only folder path is given
+      if (!folderPath) {
+        folderPath = mountPath;
+        mountPath = "/";
+      }
+      const resolvedFolder = path.resolve(folderPath);
+      this.middlewares.push({
+        path: mountPath,
+        handler: (req, res, next) => {
+            // Only serve GET or HEAD
+          if (req.method !== "GET" && req.method !== "HEAD") {
+              return next();
+          }
+            // Determine file path
+          const requestPath = decodeURIComponent(req.path.replace(mountPath, ""));
+          const filePath = path.join(resolvedFolder, requestPath);
+            // Prevent directory traversal
+          if (!filePath.startsWith(resolvedFolder)) {
+            return next();
+          }
+          // If directory, look for index.html
+          let finalPath = filePath;
+          if (fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {
+            finalPath = path.join(filePath, "index.html");
+          }
+          // File must exist
+          if (!fs.existsSync(finalPath)) {
+            return next();
+          }
+          
+            // Detect content-type
+          const mimeTypes = {
+              ".html": "text/html",
+              ".css": "text/css",
+              ".js": "application/javascript",
+              ".json": "application/json",
+              ".png": "image/png",
+              ".jpg": "image/jpeg",
+              ".jpeg": "image/jpeg",
+              ".gif": "image/gif",
+              ".svg": "image/svg+xml",
+              ".ico": "image/x-icon",
+              ".woff": "font/woff",
+              ".woff2": "font/woff2"
+          };
+          const ext = path.extname(finalPath).toLowerCase();
+          const contentType = mimeTypes[ext] || "application/octet-stream";
+          res.setHeader("Content-Type", contentType);
+          res.setHeader("Cache-Control", "public, max-age=3600"); // 1 hour
+          const stream = fs.createReadStream(finalPath);
+          stream.on("error", () => next());
+          stream.pipe(res);
+        }
+      });
+      return this;
+    }
 
     // Enhanced middleware support
     use(path, ...handlers) {
