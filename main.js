@@ -152,7 +152,6 @@ class ChisaServer {
                 return null;
             }
         }
-        
         return params;
     }
 
@@ -314,14 +313,11 @@ class ChisaServer {
                         }
                     }
                 }
-
                 if (!routeHandlers) {
                     throw new HttpError(404, 'Not Found');
                 }
-
                 // Add params to request
                 req.params = params;
-
                 // Execute middleware chain
                 let middlewareIndex = 0;
                 const executeMiddleware = async () => {
