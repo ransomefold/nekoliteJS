@@ -20,7 +20,7 @@
   	".": "./main.js"
   },
   "files": [
-  	"assets/", "chisa.js", "main.js"
+  	"assets/", "chisa.js", "main.js", "docs/"
   ],
   "main": "./main.js",
   "scripts": {
