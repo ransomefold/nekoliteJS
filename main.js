@@ -263,7 +263,6 @@ class ChisaServer {
         server.timeout = this.options.timeout;
 
         server.listen(port, () => {
-            console.log(`🌸 Chisa server is running on port ${port}`);
             if (callback) callback();
         });
 

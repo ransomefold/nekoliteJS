@@ -42,7 +42,7 @@ app.get("/", (req, res) => {
     res.send("hallo palkon!!")
 });
 
-app.listen( 8080, () => console.log("server berhasil dijalankan"));
+app.run( 8080, () => console.log("server berhasil dijalankan"));
 ```
 ---
 

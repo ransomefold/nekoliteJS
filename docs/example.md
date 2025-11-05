@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
   res.send("Hello from Chisa 🌸");
 });
 
-app.listen(3000);
+app.run(3000);
 ```
 
 ## ROUTE DANGAN PARAMS
