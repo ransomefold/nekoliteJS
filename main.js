@@ -1,6 +1,3 @@
-// Chisa - A Lightweight Express-like Web Framework
-// Author: ransomefold
-// https://github.com/ransomefold
 
 import http from "http";
 import fs from "fs";
@@ -228,7 +225,6 @@ class ChisaServer {
                     throw new HttpError(404, 'Not Found');
                 }
                 req.params = bestParams;
-
                 let middlewareIndex = 0;
                 const executeMiddleware = async () => {
                     if (middlewareIndex < this.middlewares.length) {
@@ -305,6 +301,11 @@ class ChisaServer {
             res.setHeader('Content-Type', 'text/plain');
             res.end(String(data));
         };
+        
+        res.serve = (pathToFile) => {
+            res.writeHead(200, {"Content-Type": "text/html"});
+            res.end(pathToFile);
+        }
         
         res.redirect = (status, url) => {
             if (!url) {
